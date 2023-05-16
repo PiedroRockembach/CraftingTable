@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 26px;
+}
+body {
+  background-color: #333;
+}
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+h1 {
+  margin: 0 auto 50px 0;
+  text-align: center;
+  font-size: 72px;
+  
+}
+
+.craft-table {
+  border: 1px solid #ccc;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  width: 60vh;
+  height: 60vh;
+
+}
+
+.table-cell {
+  border: 1px solid #ccc;
+  width: 20vh;
+  height: 20vh;
+}
+
+.result-section {
+  display: flex;
+  
+}
+
+.result {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.items > div {
+  border: 1px solid #ccc;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  cursor: move;
+  color: #ccc;
+} 
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+}
+
+.table-cell {
+  display: flex;
+  position: relative;
+}
+
+.table-cell:hover > .remove{
+  display: flex;
+}
+
+.remove {
+  background-color: brown;
+  width: 15%;
+  height: 15%;
+  font-size: 80%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  display: none;
+}
+
+.result {
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

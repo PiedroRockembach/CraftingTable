@@ -1,0 +1,183 @@
+ [ 
+  {
+    "name": "wooden pickaxe",
+    "patern": [
+      "wood",
+      "wood",
+      "wood",
+      "",
+      "stick",
+      "",
+      "",
+      "stick",
+      ""
+  ]
+  },
+  {
+    "name": "stone pickaxe",
+    "patern": [
+      "stone",
+      "stone",
+      "stone",
+      "",
+      "stick",
+      "",
+      "",
+      "stick",
+      ""
+  ]
+  },
+  {
+    "name": "stone axe",
+    "patern": [
+      "stone",
+      "stone",
+      "",
+      "stone",
+      "stick",
+      "",
+      "",
+      "stick",
+      ""
+  ]
+  },
+  {
+    "name": "stone axe",
+    "patern": [
+      "",
+      "stone",
+      "stone",
+      "",
+      "stick",
+      "stone",
+      "",
+      "stick",
+      ""
+  ]
+  },
+  {
+    "name": "wooden axe",
+    "patern": [
+      "",
+      "wood",
+      "wood",
+      "",
+      "stick",
+      "wood",
+      "",
+      "stick",
+      ""
+  ]
+  },
+  {
+    "name": "wooden axe",
+    "patern": [
+      "wood",
+      "wood",
+      "",
+      "wood",
+      "stick",
+      "",
+      "",
+      "stick",
+      ""
+  ]
+  },
+  {
+    "name": "wooden sword",
+    "patern": [
+      "",
+      "wood",
+      "",
+      "",
+      "wood",
+      "",
+      "",
+      "stick",
+      ""
+  ]
+  },
+  {
+    "name": "wooden sword",
+    "patern": [
+      "",
+      "wood",
+      "",
+      "",
+      "wood",
+      "",
+      "",
+      "stick",
+      ""
+  ]
+  },
+  {
+    "name": "wooden sword",
+    "patern": [
+      "",
+      "",
+      "wood",
+      "",
+      "",
+      "wood",
+      "",
+      "",
+      "stick"
+  ]
+  },
+  {
+    "name": "wooden sword",
+    "patern": [
+      "wood",
+      "",
+      "",
+      "wood",
+      "",
+      "",
+      "stick",
+      "",
+      ""
+  ]
+  },{
+    "name": "stone sword",
+    "patern": [
+      "",
+      "stone",
+      "",
+      "",
+      "stone",
+      "",
+      "",
+      "stick",
+      ""
+  ]
+  },
+  {
+    "name": "stone sword",
+    "patern": [
+      "",
+      "",
+      "stone",
+      "",
+      "",
+      "stone",
+      "",
+      "",
+      "stick"
+  ]
+  },
+  {
+    "name": "stone sword",
+    "patern": [
+      "stone",
+      "",
+      "",
+      "stone",
+      "",
+      "",
+      "stick",
+      "",
+      ""
+  ]
+  }
+]
