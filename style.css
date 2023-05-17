@@ -6,9 +6,11 @@
 }
 body {
   background-color: #333;
+  
 }
-main {
+.main {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-around;
 }
 
@@ -16,7 +18,7 @@ h1 {
   margin: 0 auto 50px 0;
   text-align: center;
   font-size: 72px;
-  
+  color: #ccc;
 }
 
 .craft-table {
@@ -36,12 +38,16 @@ h1 {
 
 .result-section {
   display: flex;
-  
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 20vw;
 }
 
 .result {
-  width: 200px;
-  height: 200px;
+  width: 30vh;
+  height: 30vh;
   border: 1px solid #ccc;
 }
 
@@ -53,7 +59,7 @@ h1 {
 
 .items > div {
   border: 1px solid #ccc;
-  width: 300px;
+  width: 100px;
   height: 100px;
   display: flex;
   justify-content: center;
@@ -97,15 +103,80 @@ h1 {
   display: none;
 }
 
-.result {
-  color: #ccc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.btn-clear {
+  width: 100px;
+  height: 100px;
 }
 
-.result-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+/* items*/
+#stick {
+  background-image: url('./images/stick.png');
+  background-size: 80%;
+  background-repeat:  no-repeat;
+  background-repeat:  no-repeat;
+  background-position: center;
+}
+
+#stone {
+  background-image: url('./images/stone.png');
+  background-size: 80%;
+  background-repeat:  no-repeat;
+  background-repeat:  no-repeat;
+  background-position: center;
+}
+
+#wood {
+  background-image: url('./images/wood.png');
+  background-size: 80%;
+  background-repeat:  no-repeat;
+  background-repeat:  no-repeat;
+  background-position: center;
+}
+
+#woodenPickaxe {
+  background-image: url('./images/woodenPickaxe.png');
+  background-size: 80%;
+  background-repeat:  no-repeat;
+  background-repeat:  no-repeat;
+  background-position: center;
+}
+
+#woodenAxe {
+  background-image: url('./images/woodenAxe.png');
+  background-size: 80%;
+  background-repeat:  no-repeat;
+  background-repeat:  no-repeat;
+  background-position: center;
+}
+
+#woodenSword{
+  background-image: url('./images/woodenSword.webp');
+  background-size: 80%;
+  background-repeat:  no-repeat;
+  background-repeat:  no-repeat;
+  background-position: center;
+}
+
+#stonePickaxe {
+  background-image: url('./images/stonePickaxe.png');
+  background-size: 80%;
+  background-repeat:  no-repeat;
+  background-repeat:  no-repeat;
+  background-position: center;
+}
+
+#stoneAxe {
+  background-image: url('./images/stoneAxe.webp');
+  background-size: 80%;
+  background-repeat:  no-repeat;
+  background-repeat:  no-repeat;
+  background-position: center;
+}
+
+#stoneSword{
+  background-image: url('./images/stoneSword.png');
+  background-size: 80%;
+  background-repeat:  no-repeat;
+  background-repeat:  no-repeat;
+  background-position: center;
 }

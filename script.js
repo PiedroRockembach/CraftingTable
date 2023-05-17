@@ -8,7 +8,7 @@ let curItem = '';
 let source;
 items.forEach( item => {
   item.addEventListener('dragstart', (e) => {
-    curItem = e.target.innerHTML
+    curItem = e.target.id
   })
   item.addEventListener('dragend', (e) => {
 
@@ -16,18 +16,20 @@ items.forEach( item => {
     
   })
 });
+
 const craft = async () => {
   const cells = document.querySelectorAll('.content')
   let arr = []
-  console.log('arrey', arr);
+  console.log(cells);
   let created = ''
-  cells.forEach((e) => arr.push(e.innerHTML))
+  cells.forEach((e) => arr.push(e.id))
   allItems.forEach((i) => {
     if( i.patern.toString() === arr.toString() ) {
       created = i.name;
+      console.log('name', created);
     }
   })
-  result.innerHTML = created;
+  result.id = created;
 
 }
 
@@ -47,29 +49,31 @@ for (let index = 1; index <= 9; index += 1) {
   content.addEventListener('dragstart', (e) => {
     console.log(e.target);
     source = e.target
-    curItem = e.target.innerHTML
-    e.target.innerHTML = '';
+    curItem = e.target.id
+    e.target.id = '';
   })
   content.addEventListener(
     "dragover",
     (event) => {
       // prevent default to allow drop
       event.preventDefault();
+      craft();
     },
     false
   );
   content.addEventListener('dragenter',({ target }) => {
-    over = target.innerHTML;
+    over = target.id;
   })
   content.addEventListener('drop', (e) => {
     e.preventDefault();
-    e.target.innerHTML = curItem
+
+    e.target.id = curItem
     craft();
   } )
   cell.appendChild(x)
   cell.appendChild(content)
   x.addEventListener('click', () => {
-    content.innerHTML = ''
+    content.id = ''
     craft();
   })
   craftTable.appendChild(cell)
@@ -77,6 +81,6 @@ for (let index = 1; index <= 9; index += 1) {
 
 btnClear.addEventListener('click', () => {
   const cells = document.querySelectorAll('.content')
-  cells.forEach(c => c.innerHTML = ''); 
+  cells.forEach(c => c.id = ''); 
   
 })
